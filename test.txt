@@ -1,0 +1,13 @@
+./modpoll -m rtu -b 9600 -t 4 -r 1144 -c 2 /dev/ttyUSB0
+
+-m rtu	走 rtu 協定
+ 
+-b 9600	baud rate 9600
+
+-t 4	hoding register
+
+-r 1144	從暫存器位置 1144 開始
+
+-c 2	從暫存器起始位置開始遞增 polling 兩個值
+
+這個指令是用來查暫存器 1144(關閉器對水主機溫度) 和 1145(開啟器對水主機溫度) 的值
